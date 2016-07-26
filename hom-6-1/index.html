@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<div class="container">
+<header class="header clearfix">
+            <img src="images/logo.png" />
+ </header>
+    <div class="jumbotron">
+     <h1><i>Italian Pizza</i></h1>
+     <p id="intro-text" class="lead">"Push the button to start!"</p>
+     <a id="start-button" class="btn btn-lg btn-success" href="#" role="button">Start</a>
+            
+    <div id="total-box" class="mainhide">
+    <label for="total">Total: $</label>
+     <input type="text" id="total" name="total" readonly />
+    </div>
+    </div>
+    <div id="main" class="row marketing mainhide">
+    <div class="col-lg-6">
+    <form name="form" role="form" class="form-horizontal">
+    <div id="delivery_info">
+     <fieldset id="field1">
+     <legend>Customer Information</legend>
+    <div class="form-group">
+     <label for="name" class="control-label col-sm-3">Name:</label>
+     <div class="col-sm-8">
+     <input type="text" id="delivery-name" class="form-control" name="name" placeholder="Eli Akbari" />
+   </div>
+ </div>
+                        
+ <div class="form-group">
+ <label for="address-type" class="control-label col-sm-3">Settle in:</label>
+ <div class="col-sm-4">
+ <select id="address-type" name="addtype" class="form-control">
+ <option value="house">House</option>
+ <option value="apartment">Apartment</option>
+ <option value="hotel">Hotel</option>
+ <option value="other">Other</option>       </select>
+ </div>
+ <div class="col-sm-4">
+    <input id="other-box" type="text" name="other" class="form-control" placeholder="Garage"/>
+ </div>
+ </div>
+                        
+<div class="form-group">
+<label for="delivery_street_address" class="control-label col-sm-3">Address:</label>
+<div class="col-sm-8">
+ <input type="text" name="delivery_street_address" class="form-control" placeholder="Street name" />
+ </div>
+</div>
+                        
+<div class="form-group">
+ <label for="delivery_optional_apt" class="control-label col-sm-3"></label>
+ <div class="col-sm-8">
+ <input type="text" name="delivery_optional_apt" class="form-control" placeholder="House number" />
+ </div>
+ </div>
+                        
+<div class="form-group">
+ <label for="delivery_city" class="control-label col-sm-3"></label>
+ <div class="col-sm-8">
+ <input type="text" name="delivery_city" class="form-control" placeholder="City" />
+  </div>
+</div>
+ <div class="form-group">
+ <label for="delivery_state" class="control-label col-sm-3"></label>
+<div class="col-sm-8">
+ <input type="text" name="delivery_state" class="form-control" placeholder="State" />
+      </div>
+</div>
+ <div class="form-group">
+ <label for="delivery_zip" class="control-label col-sm-3"></label>
+<div class="col-sm-8">
+ <input type="text" name="delivery_zip" class="form-control" placeholder="zip-code" />
+ </div>
+ </div>
+                        
+ <div class="form-group">
+ <label for="phone" class="control-label col-sm-3">Phone:</label>
+ <div class="col-sm-8">
+<input type="text" name="phone" class="form-control" placeholder="555-555-5555" />
+ </div>
+</div>
+                        
+<div class="form-group">
+ <label for="email" class="control-label col-sm-3">Email:</label>
+<div class="col-sm-8">
+<input type="text" name="email" class="form-control"  />
+ </div>
+</div>
+ </fieldset>
+ </div>
+                    
+  <div id="billing_info_div" class="form-group mainhide">
+ <fieldset id="field2">
+ <legend>Your Bill</legend>
+<div class="form-group">
+<input type="checkbox" name="bill_info_same" id="bill_info_same"/>
+
+ <label for="bill_info_same" class="control-label">--Conform your billing information</label>
+  </div>
+<div class="form-group">
+ <label for="bill_name" class="control-label col-sm-3">--Name:</label>
+<div class="col-sm-8">
+ <input type="text" name="bill_name" class="form-control" placeholder="Eli Akbari" />
+ </div>
+ </div>
+ <div class="form-group">
+<label for="bill_street_address" class="control-label col-sm-3">--Address:</label>
+ <div class="col-sm-8">
+ <input type="text" name="bill_street_address" class="form-control" placeholder="Street name" />
+ </div>
+ </div>
+ <div class="form-group">
+ <label for="bill_optional_apt" class="control-label col-sm-3"></label>
+ <div class="col-sm-8">
+ <input type="text" name="bill_optional_apt" class="form-control" placeholder="House number" />
+  </div>
+    </div>
+ <div class="form-group">
+<label for="bill_city" class="control-label col-sm-3"></label>
+ <div class="col-sm-8">
+ <input type="text" name="bill_city" class="form-control" placeholder="City" />
+ </div>
+</div>
+    <div class="form-group">
+<label for="bill_state" class="control-label col-sm-3"></label>
+ <div class="col-sm-8">
+ <input type="text" name="bill_state" class="form-control" placeholder="State" />
+ </div>
+ </div>
+<div class="form-group">
+ <label for="bill_zip" class="control-label col-sm-3"></label>
+ <div class="col-sm-8">
+ <input type="text" name="bill_zip" class="form-control" placeholder="zip-code" />
+ </div>
+                            
+</div>
+<div  class="form-group">
+ <label for="cc_number" class="control-label col-sm-3">--Credit Card information:</label>
+ <div id="cc_number_div" class="col-sm-8">
+ <input type="text" name="cc_number" id="cc_number" class="form-control" placeholder="Credit card number" />
+ </div>
+</div>
+<div class="form-group">
+<label for="cvc" class="control-label col-sm-3"> --Credit code</label>
+ <div class="col-sm-8">
+<input type="text" name="cvc" class="form-control"  />
+</div>
+ </div>
+ <div class="form-group">
+<label for="bill_month" class="control-label col-sm-3">--Expire on:</label>
+ <div class="col-sm-4">
+<select name="bill_month" class="form-control">
+   
+ <option value="1">Jan</option>
+ <option value="2">Feb</option>
+ <option value="3">Mar</option>
+ <option value="4">Apr</option>
+ <option value="5">May</option>
+ <option value="6">Jun</option>
+ <option value="7">Jul</option>
+ <option value="8">Aug</option>
+ <option value="9">Sep</option>
+ <option value="10">Oct</option>
+ <option value="11">Nov</option>
+ <option value="12">Dec</option>
+    
+     
+  </select>
+     
+ </div>
+        <div class="col-sm-4">
+ <select name="bill_year" class="form-control">
+   
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+</select>
+ </div>
+    </div>
+ </fieldset>
+ </div>
+       
+       
+                
+ <div id="build-order-section" class="col-lg-6">
+        <div class="form-group">
+            <fieldset id="field3">
+ <legend>Make your own PIZZA</legend>
+     <div id="dough" class="form-group">
+<label for="radio" class="control-label col-sm-3">Pizza Type:</label>
+    <div id="potential_error_placement" class="col-sm-9">
+ <input type="radio" name="dough" value="thin crust" /> Thin Crust
+<br />
+ <input type="radio" name="dough" value="hand tossed" /> Hand Tossed
+<br />
+<input type="radio" name="dough" value="new york style" /> New York Style
+<br />
+<input type="radio" name="dough" value="pan pizza" /> Pan Pizza
+  </div>
+        </div>
+ <div id="dough_box" class="form-group mainhide">
+    <label for="pizza_selection" class="control-label col-sm-3">Sizes:</label>
+        <div class="col-sm-8">
+     <select name="pizza_selection" id="pizza_selection" class="form-control">
+<option value="0.00">Select the sizes</option>
+        </select>
+  </div>
+</div>
+    <div id="cheese_box" class="form-group mainhide">
+<label for="cheese" class="control-label col-sm-3">Cheese:</label>
+        <div class="col-sm-8">
+ <select name="cheese" class="form-control">
+ 
+ <option value="cheese-normal" selected>Normal amount: no charge</option>
+ <option value="cheese-extra">Extra: +$1.99</option>
+ <option value="cheese-double">Double: +$2.45</option>
+    </select>
+</div>
+ </div>
+ <div id="sauce_box" class="form-group mainhide">
+ <label for="sauce" class="control-label col-sm-3">Sauce:</label>
+     <div class="col-sm-8">
+<select name="sauce" class="form-control">
+    <option value="sauce-regular" selected>Regular Tomato sause: no charge</option>
+    <option value="sauce-hearty">mix herb Tomato: +$.99</option>
+    <option value="sauce-bbq">BBQ Sauce: +$1.99</option>
+    <option value="sauce-garlic">Garlic Sauce: +$2.45</option>
+ </select>
+     </div>
+        </div>
+    <div id="toppings_box" class="form-group mainhide">
+     <label for="toppings" class="control-label col-sm-6">Extra Toppings: ($.99 for each)</label>
+     <div id="toppings_inner_box" class="col-sm-12">
+    <input type="checkbox" name="toppings" value="pepperoni" />Pepperoni 
+    <input type="checkbox" name="toppings" value="sausage" />Sausage 
+    <input type="checkbox" name="toppings" value="ham" />Ham
+     <input type="checkbox" name="toppings" value="bacon" />Bacon 
+     <input type="checkbox" name="toppings" value="peppers" />Peppers 
+     <input type="checkbox" name="toppings" value="olives" />Olives 
+     <input type="checkbox" name="toppings" value="mushrooms" />Mushrooms 
+    <input type="checkbox" name="toppings" value="pineapple" />Pineapple 
+    <input type="checkbox" name="toppings" value="onion" />Onion
+ </div>   
+     </div>
+         </fieldset>
+    </div>
+</div>
+            
+    <div id="fin-pizza-btn" class="col-lg-12">
+ <div id="build-submit-btn" class="form-group align-btn">
+     <input id="fin-build-btn" type="button" class="form control btn-lg" value="Finished Building Pizza">
+ </div>
+    </div>
+         <div class="col-lg-12">
+    <div id="all-submit-btn" class="form-group align-btn">
+<input id="form-submit" type="button" class="form control btn-lg" value="Order">
+     </div>
+ </div>
+    
+    </form>
+        </div>
+     <footer class="footer">
+ <p>Website &copy; Elham 2016 | Images &copy; LootCastle 2015</p>
+ </footer>
+ </div>
+    <div id="end" class="mainhide">
+ <h1>Your order has been placed. Thank you!</h1>
+    </div>
+
+    <script src="js/Assig6.js"></script>
+    </div>
+</body>
+</html>

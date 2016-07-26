@@ -1,0 +1,130 @@
+
+body {
+    background-color: #FFFFFF;
+}
+
+.header {
+    border-bottom: thin solid grey;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+header img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: auto;
+}
+
+#total-box {
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    margin: 30px auto 0px auto;
+    text-align: center;
+    font-size: 2em;
+    background-color: #FFFFFF;
+}
+
+#total {
+    background-color: #FFFFFF;
+    border: 0;
+    width: 100px;
+}
+
+.jumbotron {
+    text-align: center;
+    clear: both;
+    background: url(../images/background.png) no-repeat center;
+
+    
+    
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    
+}
+
+.jumbotron h1, #intro-text {
+    color: #FFFFFF;
+}
+
+#start-button {
+    background-color: #3f95d1;
+    border-color: #3f95d1;
+}
+
+.mainhide {
+   display: none; 
+}
+
+#field1 label, #field2 label, #field3 label {
+    text-align: left;
+    color: #5e8d89;
+}
+
+.error {
+    color: darkred;
+    font-weight: bold;
+    text-align: right;
+}
+
+.cardDisplay {
+    color: darkgreen;
+    font-weight: bold;
+    text-align: right;
+}
+
+#field3 div {
+    margin: 10px 0;
+}
+
+#toppings_inner_box {
+    width: 500px;
+}
+
+#field3 {
+    color: #3f95d1;
+}
+
+#field3 label {
+    margin-top: 15px;
+}
+
+#field3 input {
+    margin: 5px;
+    color: #3f95d1;
+}
+
+.align-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#other-box {
+    display: none;
+}
+
+#fin-build-btn, #form-submit {
+    background-color: #3f95d1;
+    border-color: #3f95d1;
+    color: #FFFFFF;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#form-submit {
+    display: none;
+    margin: 10px auto 0 auto;
+}
+
+#end h1 {
+    text-align: center;
+    color: #3f95d1;
+    font-family: 'Varela Round', sans-serif;
+}
+
+footer {
+    border-top: thin solid grey;
+    padding: 20px 0;
+    margin-top: 10px;
+    text-align: center;
+}
